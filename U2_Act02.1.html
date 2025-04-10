@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--Llenar el Title y los Metadatos-->
+    <title>Unidad 2 | Actividad 02</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Sergio Naresh Rodriguez Zapata">
+    <meta name="Fecha" content="26 de Febrero de 2025">
+    <meta name="Descripcion" content="Tablas">
+<style>
+   table, td {
+     border: 1px solid black;
+     border-collapse: collapse;
+     text-align: center;
+     vertical-align: middle;
+   }
+   td {
+     width: 40px;
+     height: 40px;
+   }
+   h2 {
+     margin-top: 40px;
+   }
+   /* Estilos para la cuarta tabla (grid de letras) */
+   .grid-container {
+     display: grid;
+     grid-template-columns: repeat(6, 60px);
+     grid-auto-rows: 60px;
+     gap: 2px;
+     margin-top: 40px;
+     width: fit-content;
+     border: 2px solid black;
+     padding: 4px;
+   }
+   .grid-item {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid black;
+     font-weight: bold;
+     background-color: #f0f0f0;
+   }
+</style>
+</head>
+<body>
+<h1>Unidad 2 | Actividad 02-B :: Tema (Tablas)</h1>
+<!-- Tabla 1 -->
+<h2>Tabla 1</h2>
+<table>
+<tr><td colspan="4"></td><td colspan="2">AH</td><td colspan="4"></td></tr>
+<tr><td colspan="4"></td><td>G</td><td></td><td colspan="4"></td></tr>
+<tr><td colspan="4"></td><td colspan="2">GH</td><td colspan="4"></td></tr>
+<tr><td colspan="4"></td><td colspan="2">N</td><td colspan="4"></td></tr>
+<tr><td colspan="3"></td><td colspan="4">O</td><td colspan="3"></td></tr>
+<tr><td colspan="3"></td><td colspan="4">P</td><td colspan="3"></td></tr>
+<tr><td colspan="2"></td><td colspan="6">Q</td><td colspan="2"></td></tr>
+<tr>
+<td>R</td><td>S</td><td>T</td><td>U</td><td>V</td><td>W</td><td>X</td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td>Z</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+</tr>
+</table>
+<!-- Tabla 2 -->
+<h2>Tabla 2 (Números del 1 al 17)</h2>
+<table>
+<tr><td>1</td><td>2</td><td>3</td><td></td><td></td></tr>
+<tr><td>4</td><td>4</td><td>5</td><td>5</td><td></td></tr>
+<tr><td>4</td><td>6</td><td>6</td><td>7</td><td></td></tr>
+<tr><td>8</td><td>9</td><td>10</td><td>11</td><td>7</td></tr>
+<tr><td>12</td><td>12</td><td>13</td><td>14</td><td></td></tr>
+<tr><td>13</td><td>15</td><td>16</td><td></td><td></td></tr>
+<tr><td>8</td><td>13</td><td>17</td><td>17</td><td></td></tr>
+</table>
+<!-- Tabla 3 -->
+<h2>Tabla 3 (Letras A-G y números del 1 al 20)</h2>
+<table>
+<tr><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td></tr>
+<tr><td colspan="2">1</td><td colspan="2">3</td><td colspan="2">4</td></tr>
+<tr><td>5</td><td>6</td><td>7</td><td>2</td><td>8</td><td>9</td><td>4</td></tr>
+<tr><td>10</td><td></td><td></td><td></td><td>11</td><td></td><td>12</td></tr>
+<tr><td colspan="7">13</td></tr>
+<tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+</table>
+<!-- Tabla 4 -->
+<h2>Tabla 4 (Letras A-M en bloques)</h2>
+<div class="grid-container">
+<div class="grid-item" style="grid-column: 1 / span 1; grid-row: 1 / span 2;">A</div>
+<div class="grid-item" style="grid-column: 2;">B</div>
+<div class="grid-item" style="grid-column: 2; grid-row: 2;">C</div>
+<div class="grid-item" style="grid-column: 3 / span 1; grid-row: 1 / span 2;">D</div>
+<div class="grid-item" style="grid-column: 4;">E</div>
+<div class="grid-item" style="grid-column: 5;">F</div>
+<div class="grid-item" style="grid-column: 4;">G</div>
+<div class="grid-item" style="grid-column: 5;">H</div>
+<div class="grid-item" style="grid-column: 6;">I</div>
+<div class="grid-item" style="grid-column: 1;">J</div>
+<div class="grid-item" style="grid-column: 1 / span 2;">K</div>
+<div class="grid-item" style="grid-column: 3 / span 2;">L</div>
+<div class="grid-item" style="grid-column: 5 / span 2;">M</div>
+</div>
+</body>
+</html>
