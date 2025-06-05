@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Información sobre Assassin's Creed">
+  <meta name="author" content="Ubisoft y comunidad de jugadores">
+  <title>Abstergo Industries: References</title>
+  <link rel="canonical" href="https://www.ubisoft.com/es-mx/game/assassins-creed">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link href="Format.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0d1b2a;
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+      text-align: justify;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #2c2c2c;
+    }
+    h1, h2, h3 {
+      color: #f0c674;
+    }
+    h1 {
+      animation: fadeInDown 2s ease-out;
+    }
+    section {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    a { color: #00d4ff; text-decoration: none; transition: color 0.3s ease; }
+    a:hover { color: #d9534f; }
+    .navbar-brand, .nav-link { color: #f0c674 !important; }
+    .navbar-nav .nav-link:hover { color: #d9534f !important; }
+    .btn-primary {
+      background-color: #d9534f;
+      border-color: #d43f00;
+    }
+    .btn-primary:hover {
+      background-color: #c9302c;
+      border-color: #ac2925;
+    }
+    iframe {
+      width: 100%;
+      height: 315px;
+      margin: 20px 0;
+      border-radius: 10px;
+      animation: zoomIn 1.5s ease;
+    }
+    .img-container {
+      display: flex;
+      gap: 15px;
+      margin: 15px 0;
+      flex-wrap: wrap;
+    }
+    img {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+      transition: transform 0.3s;
+      animation: zoomIn 1.5s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('section').forEach(sec => observer.observe(sec));
+    });
+  </script>
+</head>
+<body>
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://szap19.github.io/Cover.html">Abstergo Industries</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="https://szap19.github.io/ContenidoOddisey.html">Contenido</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://szap19.github.io/References.html">Referencias</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://szap19.github.io/Contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main style="margin-top: 60px;">
+    <!-- Carrusel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://szap19.github.io/ContenidoOddisey.html">
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/812140/header.jpg" alt="Assassin's Creed Odyssey">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://szap19.github.io/Origins.html">
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/582160/header.jpg" alt="Assassin's Creed Origins">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://szap19.github.io/Valhala.html">
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2208920/header.jpg" alt="Assassin's Creed Valhalla">
+          </a>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </a>
+    </div>
+
+    <!-- Trailer Oficial -->
+    <section>
+      <h2 style="text-align: center; margin-top: 30px;">Trailer oficial de Assassin's Creed Valhalla</h2>
+      <iframe src="https://www.youtube.com/embed/gG4iXMsvub4" title="Assassin's Creed Valhalla Official Gameplay Trailer" allowfullscreen></iframe>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section id="redes-sociales">
+      <h2 style="text-align: center;">Sigue a Assassin's Creed en sus redes sociales oficiales</h2>
+      <div class="redes-container">
+        <!-- TikTok -->
+        <div class="red-social">
+          <div class="social-header"><i class="fab fa-tiktok"></i> TikTok</div>
+          <div class="social-embed">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@assassinscreed" data-unique-id="assassinscreed" data-embed-type="creator" style="max-width: 780px; min-width: 288px;">
+              <section><a target="_blank" href="https://www.tiktok.com/@assassinscreed">@assassinscreed</a></section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+        </div>
+        <!-- Facebook -->
+        <div class="red-social">
+          <div class="social-header"><i class="fab fa-facebook"></i> Facebook</div>
+          <div class="social-embed">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fassassinscreed&tabs=timeline&width=340&height=500" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>
+          </div>
+        </div>
+        <!-- Instagram -->
+        <div class="red-social">
+          <div class="social-header"><i class="fab fa-instagram"></i> Instagram</div>
+          <div class="social-embed">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/assassinscreed/" data-instgrm-version="14" style="width:100%; max-width:540px; margin:auto;"></blockquote>
+            <script async src="https://www.instagram.com/embed.js"></script>
+          </div>
+        </div>
+        <!-- Twitter -->
+        <div class="red-social">
+          <div class="social-header"><i class="fab fa-twitter"></i> Twitter</div>
+          <div class="social-embed">
+            <blockquote class="twitter-tweet">
+              <p lang="en" dir="ltr">Assassin's Creed Valhalla is now available! ⚔️ Explore the Viking world today.<br><br>➡️ <a href="https://t.co/yYz3XJcMeL">https://t.co/yYz3XJcMeL</a></p>
+              — Assassin's Creed (@assassinscreed) <a href="https://twitter.com/assassinscreed/status/1326147774054084608">November 10, 2020</a>
+            </blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="margin-top: 30px;">
+      <p style="text-align: center;">© 2025 Assassin's Creed Fansite. Todos los derechos reservados.</p>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
