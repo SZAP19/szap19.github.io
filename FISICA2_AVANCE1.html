@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISICA II: El Universo Conectado</title>
+    <style>
+        :root {
+            --primary-color: #0d1b2a;
+            --secondary-color: #1b263b;
+            --accent-color: #415a77;
+            --text-color: #e0e1dd;
+            --highlight-color: #778da9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        /* Header y Navegación */
+        header {
+            background: var(--secondary-color);
+            color: var(--text-color);
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: 3px solid var(--highlight-color);
+        }
+
+        header a {
+            color: var(--text-color);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+            font-size: 28px;
+            color: var(--highlight-color);
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight, header .current a {
+            color: var(--highlight-color);
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Sección Hero */
+        .hero {
+            min-height: 400px;
+            background: url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+            text-align: center;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            max-width: 700px;
+        }
+
+        /* Secciones de contenido */
+        .section {
+            padding: 40px 0;
+            border-bottom: 1px solid var(--secondary-color);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: var(--highlight-color);
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--secondary-color);
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            text-align: center;
+            flex-basis: 30%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .card i {
+            font-size: 48px;
+            color: var(--highlight-color);
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 25px;
+            margin-top: 20px;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            text-align: center;
+            border-top: 3px solid var(--highlight-color);
+        }
+        
+        .social-links a {
+            margin: 0 10px;
+            color: var(--text-color);
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--highlight-color);
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><i class="fas fa-magnet"></i> FISICA II</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Inicio</a></li>
+                    <li><a href="#">Conceptos</a></li>
+                    <li><a href="#">Leyes</a></li>
+                    <li><a href="#">Aplicaciones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>La Fuerza Invisible que Moldea Nuestro Mundo</h1>
+            <p>Explora los principios que unen la electricidad y el magnetismo, y descubre cómo impulsan la tecnología moderna.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="section" id="conceptos">
+            <h2 class="section-title">Conceptos Fundamentales</h2>
+            <div class="card-container">
+                <div class="card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Campo Eléctrico</h3>
+                    <p>Es un campo de fuerza creado por la atracción y repulsión de cargas eléctricas y se mide en Voltios por metro (V/m).</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-compass"></i>
+                    <h3>Campo Magnético</h3>
+                    <p>Un campo de fuerza producido por materiales magnéticos o por el movimiento de cargas eléctricas (corrientes).</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-wave-square"></i>
+                    <h3>Ondas Electromagnéticas</h3>
+                    <p>Son la propagación de la radiación electromagnética a través del espacio, como la luz visible, las ondas de radio o los rayos X.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="leyes">
+            <h2 class="section-title">Las 4 Leyes de Maxwell</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">James Clerk Maxwell unificó los fenómenos eléctricos y magnéticos en un conjunto de cuatro ecuaciones fundamentales que son la base de esta disciplina.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h4>Ley de Gauss para el Campo Eléctrico</h4>
+                </div>
+                <div class="card">
+                    <h4>Ley de Gauss para el Campo Magnético</h4>
+                </div>
+                <div class="card">
+                    <h4>Ley de Faraday</h4>
+                </div>
+                 <div class="card">
+                    <h4>Ley de Ampère-Maxwell</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="aplicaciones">
+            <h2 class="section-title">Aplicaciones en Nuestra Vida</h2>
+             <div class="card-container">
+                <div class="card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Comunicaciones</h3>
+                    <p>Desde la radio y la televisión hasta los teléfonos móviles y el Wi-Fi, todo se basa en la transmisión de ondas electromagnéticas.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Medicina</h3>
+                    <p>Equipos como las máquinas de resonancia magnética (MRI) utilizan potentes campos magnéticos para crear imágenes del interior del cuerpo.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-industry"></i>
+                    <h3>Motores y Generadores</h3>
+                    <p>La conversión de energía eléctrica en mecánica (motores) y viceversa (generadores) es un principio electromagnético fundamental.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>FISICA II: El Universo Conectado &copy; 2025</p>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" aria-label="Outlook"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
